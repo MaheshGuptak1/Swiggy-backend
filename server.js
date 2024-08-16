@@ -24,4 +24,8 @@
     app.use('/vendors',vendorRouter);
     app.use('/products',productRouter);
     app.use(express.json()); 
+    app.use('/',(req,res)=>{
+        res.send('<h1>welcome to swiggy</h1>');
+    })
+    
 
