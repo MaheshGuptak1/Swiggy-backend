@@ -11,7 +11,7 @@ router.post('/add-firm',jwtTokenVerify, vendorController.addFirm);
 router.get('/getvendor/:id',vendorController.getvendor);
 router.get('/getAllVendors',vendorController.getAllVendors);
 router.get('/getallfirms',vendorController.getAllFirms);
-router.get('/getfirmbyid:/firmid',vendorController.getFirmById);
+router.get('/getfirmbyid/:firmid',vendorController.getFirmById);
 router.delete('/deletefirmbyid/:firmid',vendorController.deleteFirmById);
 
 module.exports = router;
