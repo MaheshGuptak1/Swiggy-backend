@@ -5,7 +5,7 @@
     const vendorRouter=require('./Routes/vendorRoute');
     const app=express()
     const productRouter=require('./Routes/productRoute')
-    const port=7011
+    const port=process.env.port || 7011
     dotenv.config()
     app.use(bodyparser.json())
     app.listen(port,()=>{
